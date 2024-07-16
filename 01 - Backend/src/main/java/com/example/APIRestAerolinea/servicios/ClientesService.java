@@ -3,10 +3,12 @@ package com.example.APIRestAerolinea.servicios;
 import com.example.APIRestAerolinea.modelos.Cliente;
 import com.example.APIRestAerolinea.repositorios.ClienteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.Optional;
 
+@Service
 public class ClientesService {
 
     @Autowired

@@ -31,7 +31,7 @@ public class ClienteController {
         return this.clientesService.getById(id);
     }
 
-    @PutMapping(path = "/{id")
+    @PutMapping(path = "/{id}")
     public Cliente updateClienteById(@RequestBody Cliente request, Long id){
         return this.clientesService.updateById(request, id);
     }
