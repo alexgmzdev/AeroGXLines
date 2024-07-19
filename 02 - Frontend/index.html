@@ -1,11 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AeroGXLines - Inicio</title>
+
+    <!--ASOCIACION DE ESTILOS-->
+    <link rel="stylesheet" href="css/navbar.css">
+
+    <!--FUENTES DE LETRA-->
+    <link href="https://fonts.googleapis.com/css?family=K2D&display=swap" rel="stylesheet" />
+
+    <!--NORMALIZADOR DE CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css" />
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
 </head>
+
 <body>
-    
+    <!--NAV BAR-->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" id="navbar__logo">
+                <img id="navbar__logoimg" src="images/logo.webp" alt="Logo AeroGXLines">
+            </a>
+        </div>
+        <ul class="navbar__menu">
+            <li class="navbar__item">
+                <a href="#" class="selected" id="navbar__links">Inicio</a>
+            </li>
+            <li class="navbar__item">
+                <a href="#" id="navbar__links_two">Destinos</a>
+            </li>
+            <li class="navbar__item">
+                <a href="#" id="navbar__links_three">Sobre nosotros</a>
+            </li>
+        </ul>
+
+        <ul class="navbar__menu_two">
+            <li class="navbar_right__item">
+                <a href="#" id="navbar__links_right"><box-icon name='user-circle' color='#ffffff'></box-icon>Mi cuenta
+                </a>
+            </li>
+        </ul>
+    </nav>
 </body>
+
 </html>
