@@ -12,8 +12,9 @@
     <link rel="stylesheet" href="css/principal-section.css">
 
     <!--FUENTES DE LETRA-->
-    <link href="https://fonts.googleapis.com/css?family=K2D&display=swap" rel="stylesheet" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=K2D:wght@300&display=swap" rel="stylesheet">
     <!--NORMALIZADOR DE CSS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css" />
 
@@ -43,7 +44,8 @@
 
         <ul class="navbar__menu_two">
             <li class="navbar_right__item">
-                <a href="#" id="navbar__links_right"><box-icon id="user_icon" name='user-circle' color='#ffffff'></box-icon>Mi cuenta
+                <a href="#" id="navbar__links_right"><box-icon id="user_icon" name='user-circle'
+                        color='#ffffff'></box-icon>Mi cuenta
                 </a>
             </li>
         </ul>
@@ -51,7 +53,32 @@
 
     <!-- Principal body -->
     <div class="principal_section">
-        <!-- Aquí puede ir el contenido de la sección principal -->
+        <div class="container">
+            <div id="title_vuelos"><box-icon type='solid' name='plane-take-off'></box-icon>
+                Vuelos
+            </div>
+            <div id="buscador_vuelos">
+                <div id="inputs_destinos">
+                    <input type="text" id="ciudad_ida" placeholder="¿De dónde sales?">
+                    <button id="cambiar_destinos">
+                        <box-icon name='down-arrow-alt' color='#ffffff'></box-icon>
+                        <box-icon name='up-arrow-alt' color='#ffffff'></box-icon>
+                    </button>
+                    <input type="text" id="ciudad_vuelta" placeholder="¿A dónde vas?">
+                </div>
+                <div id="seleccion_fechas">
+                    <label for="fecha_ida">Fecha de Ida:</label>
+                    <input type="date" id="fecha_ida" placeholder="¿Cuándo quieres ir">
+                    <label for="fecha_vuelta">Fecha de vuelta:</label>
+                    <input type="date" id="fecha_vuelta" placeholder="¿Cuándo quieres volver?">
+
+                </div>
+                <button id="boton_busqueda">
+                    Buscar
+                    <box-icon name='search-alt-2' color='#ffffff' id="clue"></box-icon>
+                </button>
+            </div>
+        </div>
     </div>
 </body>
 

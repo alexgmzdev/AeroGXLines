@@ -6,3 +6,85 @@
     background-attachment: fixed;
     height: calc(100vh - 80px);
 }
+
+#title_vuelos{
+    background-color: #D9D9D9;
+    width: 80px;
+    height: 40px;
+    color: black;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    left: 105px;
+    top: 432px;
+    border-radius: 5%;
+}
+
+#buscador_vuelos{
+    background-color: #D9D9D9;
+    color: black;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1000px;
+    height: 150px;
+    top: 470px;
+    left: 90px;
+    border-radius: 2%;
+}
+
+#inputs_destinos{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 100px;
+}
+
+#cambiar_destinos{
+    background-color: #282F44;
+    cursor: pointer;
+}
+
+#ciudad_ida{
+    width: 250px;    
+    margin-bottom: 5px;
+}
+
+#ciudad_vuelta{
+    width: 250px;
+    margin-top: 5px;
+}
+
+#seleccion_fechas{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 400px;
+}
+
+#fecha_ida{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+#fecha_vuelta{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+#boton_busqueda{
+    display: flex;
+    position: fixed;
+    left: 960px;
+    align-items: center;
+    cursor: pointer;
+    background-color: #282F44;
+    color: #fff;
+}
+
+#clue{
+    margin-left: 3px;
+}
