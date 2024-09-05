@@ -14,11 +14,11 @@ public class ClientService {
     @Autowired
     ClientRepository clientesRepository;
 
-    public ArrayList<Client> getClientes(){
+    public ArrayList<Client> getClients(){
         return (ArrayList<Client>) clientesRepository.findAll();
     }
 
-    public Client guardarCliente(Client client){
+    public Client saveClient(Client client){
         return clientesRepository.save(client);
     }
 

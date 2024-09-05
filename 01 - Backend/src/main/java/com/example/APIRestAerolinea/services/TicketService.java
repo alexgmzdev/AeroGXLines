@@ -15,11 +15,11 @@ public class TicketService {
     @Autowired
     TicketRepository ticketRepository;
 
-    public ArrayList<Ticket> getBilletes(){
+    public ArrayList<Ticket> getTickets(){
         return (ArrayList<Ticket>) ticketRepository.findAll();
     }
 
-    public Ticket guardarBillete(Ticket ticket){
+    public Ticket saveTicket(Ticket ticket){
         return ticketRepository.save(ticket);
     }
 

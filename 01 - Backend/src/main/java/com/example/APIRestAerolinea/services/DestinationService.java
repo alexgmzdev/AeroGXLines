@@ -14,11 +14,11 @@ public class DestinationService {
     @Autowired
     DestinationRepository destinationRepository;
 
-    public ArrayList<Destinations> getDestinos(){
+    public ArrayList<Destinations> getDestinations(){
         return (ArrayList<Destinations>) destinationRepository.findAll();
     }
 
-    public Destinations guardarDestino(Destinations destinations){
+    public Destinations saveDestination(Destinations destinations){
         return destinationRepository.save(destinations);
     }
 

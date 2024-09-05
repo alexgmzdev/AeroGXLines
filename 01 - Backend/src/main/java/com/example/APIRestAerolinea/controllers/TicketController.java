@@ -16,22 +16,22 @@ public class TicketController {
     private TicketService ticketService;
 
     @GetMapping
-    public ArrayList<Ticket> getBilletes(){
-        return this.ticketService.getBilletes();
+    public ArrayList<Ticket> getTickets(){
+        return this.ticketService.getTickets();
     }
 
     @PostMapping
-    public Ticket guardarBillete(@RequestBody Ticket ticket){
-        return this.ticketService.guardarBillete(ticket);
+    public Ticket saveTicket(@RequestBody Ticket ticket){
+        return this.ticketService.saveTicket(ticket);
     }
 
     @GetMapping(path = "/{id}")
-    public Optional<Ticket>getBilleteById(@PathVariable Long id){
+    public Optional<Ticket> getTicketById(@PathVariable Long id){
         return this.ticketService.getById(id);
     }
 
     @PutMapping(path = "/{id}")
-    public Ticket updateBilleteById(@RequestBody Ticket request, Long id){
+    public Ticket updateTicketById(@RequestBody Ticket request, Long id){
         return this.ticketService.updateById(request, id);
     }
 }

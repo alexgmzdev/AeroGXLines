@@ -9,29 +9,29 @@ import java.util.ArrayList;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/cliente")
+@RequestMapping("/client")
 public class ClientController {
 
     @Autowired
     private ClientService clientService;
 
     @GetMapping
-    public ArrayList<Client> getClientes(){
-        return this.clientService.getClientes();
+    public ArrayList<Client> getClients(){
+        return this.clientService.getClients();
     }
 
     @PostMapping
-    public Client guardarCliente(@RequestBody Client client){
-        return this.clientService.guardarCliente(client);
+    public Client saveClient(@RequestBody Client client){
+        return this.clientService.saveClient(client);
     }
 
     @GetMapping(path = "/{id}")
-    public Optional<Client> getClienteById(@PathVariable Long id){
+    public Optional<Client> getClientById(@PathVariable Long id){
         return this.clientService.getById(id);
     }
 
     @PutMapping(path = "/{id}")
-    public Client updateClienteById(@RequestBody Client request, Long id){
+    public Client updateClientById(@RequestBody Client request, Long id){
         return this.clientService.updateById(request, id);
     }
 
