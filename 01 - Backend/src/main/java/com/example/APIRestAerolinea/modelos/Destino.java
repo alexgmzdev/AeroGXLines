@@ -6,6 +6,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
+/*Cambiar a ingles*/
 @Entity
 @Table(name="Destinos")
 public class Destino {
