@@ -7,6 +7,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 /*Cambiar a ingles*/
+/*preparar unicamente file destinos*/
 @Entity
 @Table(name="Destinos")
 public class Destino {
