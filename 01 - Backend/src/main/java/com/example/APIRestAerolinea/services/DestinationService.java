@@ -11,23 +11,28 @@ import java.util.Optional;
 @Service
 public class DestinationService {
 
-    @Autowired
-    DestinationRepository destinationRepository;
+
+    private DestinationRepository DestinationRepo;
+
+    @Autowired //For unit test
+    public DestinationService(DestinationRepository DestinationRepo){
+
+    }
 
     public ArrayList<Destinations> getDestinations(){
-        return (ArrayList<Destinations>) destinationRepository.findAll();
+        return (ArrayList<Destinations>) DestinationRepo.findAll();
     }
 
     public Destinations saveDestination(Destinations destinations){
-        return destinationRepository.save(destinations);
+        return DestinationRepo.save(destinations);
     }
 
     public Optional<Destinations> getById(Long id){
-        return destinationRepository.findById(id);
+        return DestinationRepo.findById(id);
     }
 
     public Destinations updateById(Destinations request, Long id){
-        Destinations destinations = destinationRepository.findById(id).get();
+        Destinations destinations = DestinationRepo.findById(id).get();
 
         destinations.setDestinationName(request.getDestinationName());
         return destinations;

@@ -14,7 +14,7 @@ public class Ticket {
 	String origin;
 	String destination;
 	String seatNumber;
-	boolean checkedBaggage;
+	boolean equipajeFacturado;
 	
 	public Ticket() {
 		super();
@@ -31,7 +31,7 @@ public class Ticket {
 		this.origin = origin;
 		this.destination = destination;
 		this.seatNumber = seatNumber;
-		this.checkedBaggage = equipajeFacturado;
+		this.equipajeFacturado = equipajeFacturado;
 	}
 
 
@@ -73,10 +73,10 @@ public class Ticket {
 		this.seatNumber = seatNumber;
 	}
 	public boolean isEquipajeFacturado() {
-		return checkedBaggage;
+		return equipajeFacturado;
 	}
 	public void setEquipajeFacturado(boolean equipajeFacturado) {
-		this.checkedBaggage = equipajeFacturado;
+		this.equipajeFacturado = equipajeFacturado;
 	}
 	
 	

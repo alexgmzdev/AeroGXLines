@@ -17,6 +17,8 @@ public class Destinations {
 	private Long idDestination;
 	private String destinationName;
 
+	private String destinationCountry;
+
 	/****************CONSTRUCTORS****************/
 	public Destinations() {
 		super();
@@ -26,6 +28,7 @@ public class Destinations {
 		super();
 		this.idDestination = idDestination;
 		this.destinationName = destinationName;
+		this.destinationCountry = destinationCountry;
 	}
 	/****************GETTERS AND SETTERS****************/
 	public long getIdDestination() {
@@ -40,5 +43,12 @@ public class Destinations {
 	public void setDestinationName(String destinationName) {
 		this.destinationName = destinationName;
 	}
-	
+
+	public String getDestinationCountry() {
+		return destinationCountry;
+	}
+	public void setDestinationCountry(String destinationCountry) {
+		this.destinationCountry = destinationCountry;
+	}
+
 }
